@@ -15,8 +15,8 @@ sub effective_mirrors {
     # TODO don't pass fallback if --cached is set?
 
     my @mirrors = ($self->mirror);
-    push @mirrors, Carton::Mirror->default if $self->custom_mirror;
-    push @mirrors, Carton::Mirror->new('http://backpan.perl.org/');
+    # push @mirrors, Carton::Mirror->default if $self->custom_mirror;
+    # push @mirrors, Carton::Mirror->new('http://backpan.perl.org/');
 
     @mirrors;
 }
