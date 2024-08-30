@@ -2,7 +2,7 @@ package Carton::Mirror;
 use strict;
 use Class::Tiny qw( url );
 
-our $DefaultMirror = 'http://cpan.metacpan.org/';
+our $DefaultMirror = 'https://cpan.metacpan.org/';
 
 sub BUILDARGS {
     my($class, $url) = @_;
